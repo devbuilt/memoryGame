@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+         <title><%= title %></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=590">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <!--styles-->
+        <link rel='stylesheet' href='/css/style.css' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+        <!--End styles-->
+</head>
+
+<body>
+        <h1 class="text-center text-secondary text-uppercase"><%= title %></h1>
+        
+        <!--Container for board-->
+        <section class="apple-memory-game">
+                <div class="apple-card" data-device="imac">
+                        <img class="main-img" src="/img/apple.jpg" alt="logo">
+                        <img class="hidden-img" src="/img/imac.jpg" alt="imac">
+                </div>
+                <div class="apple-card" data-device="imac">
+                        <img class="main-img" src="/img/apple.jpg" alt="logo">
+                        <img class="hidden-img" src="/img/imac.jpg" alt="imac">
+                </div>
+                <div class="apple-card" data-device="siri">
+                        <img class="main-img" src="/img/apple.jpg" alt="logo">
+                        <img class="hidden-img" src="/img/siri.jpg" alt="siri">
+                </div>
+                <div class="apple-card" data-device="siri">
+                        <img class="main-img" src="/img/apple.jpg" alt="logo">
+                        <img class="hidden-img" src="/img/siri.jpg" alt="siri">
+                </div>
+                <div class="apple-card" data-device="ipad">
+                        <img class="main-img" src="/img/apple.jpg" alt="logo">
+                        <img class="hidden-img" src="/img/ipad.jpg" alt="ipad">
+                </div>
+                <div class="apple-card" data-device="ipad">
+                        <img class="main-img" src="/img/apple.jpg" alt="logo">
+                        <img class="hidden-img" src="/img/ipad.jpg" alt="ipad">
+                </div>
+                <div class="apple-card" data-device="iphonex">
+                        <img class="main-img" src="/img/apple.jpg" alt="logo">
+                        <img class="hidden-img" src="/img/iphonex.jpg" alt="iphonex">
+                </div>
+                <div class="apple-card" data-device="iphonex">
+                        <img class="main-img" src="/img/apple.jpg" alt="logo">
+                        <img class="hidden-img" src="/img/iphonex.jpg" alt="iphonex">
+                </div>
+                <div class="apple-card" data-device="macmini">
+                        <img class="main-img" src="/img/apple.jpg" alt="logo">
+                        <img class="hidden-img" src="/img/macmini.jpg" alt="macmini">
+                </div>
+                <div class="apple-card" data-device="macmini">
+                        <img class="main-img" src="/img/apple.jpg" alt="logo">
+                        <img class="hidden-img" src="/img/macmini.jpg" alt="macmini">
+                </div>
+                <div class="apple-card" data-device="macbook">
+                        <img class="main-img" src="/img/apple.jpg" alt="logo">
+                        <img class="hidden-img" src="/img/macbook.jpg" alt="macbook">
+                </div>
+                <div class="apple-card" data-device="macbook">
+                        <img class="main-img" src="/img/apple.jpg"  alt="logo">
+                        <img class="hidden-img" src="/img/macbook.jpg" alt="macbook">
+                </div> 
+        </section>
+        <!--^ End Container Board ^-->
+
+                <div class="text-center">
+                        <button type="button" onclick="buttonClicked()" class="btn btn-outline-danger">START OVER</button>
+                </div>
+
+        <!--Scritpts-->
+        <script src="/js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <!--End Scripts-->
+</body>
+
+</html>

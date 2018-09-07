@@ -1,0 +1,61 @@
+* {
+margin: 0;
+box-sizing: border-box;
+padding-top: 5px;
+padding-bottom: 10px;
+}
+
+body {
+height: 100vh;
+
+}
+
+.apple-memory-game {
+  width: 580px;
+  height: 580px; 
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.apple-card {
+  width:calc(25% - 10px);
+  height:calc(33.33% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.apple-card:active {
+  transform: scale(.97);
+  transition: transform .2s;
+}
+
+.apple-card.flip {
+  transform: rotateY(180deg);
+}
+
+.main-img,
+.hidden-img {
+  width:100%;
+  height:100%;
+  padding: 35px 10px 35px;
+  position: absolute;
+  border: 2px solid #16A085;
+  border-radius: 5px;
+  background: fff;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.hidden-img {
+  transform: rotateY(180deg);
+}
+
+.btn {
+width: 580px;
+height: 40px;
+}
